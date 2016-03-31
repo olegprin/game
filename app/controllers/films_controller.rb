@@ -146,6 +146,9 @@ class FilmsController < ApplicationController
     end
   end
 
+ def save_title(title)
+    title.chomp.titleize
+  end
 
   def action
     @films = Film.where(category: ["Action", "Экшин"]).paginate(:page => params[:page], :per_page => Configurable['films_per_page'])

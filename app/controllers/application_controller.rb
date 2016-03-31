@@ -48,9 +48,7 @@ class ApplicationController < ActionController::Base
     respond_with *args, options, &blk
   end
 
-  def save_title(title)
-    title.chomp.titleize
-  end
+ 
 
   rescue_from Cinema::NotFound do
     render_404
