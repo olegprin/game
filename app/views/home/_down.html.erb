@@ -1,0 +1,35 @@
+<aside class="sidebar">
+  <div class="widget">
+    <h3 class="widgettitle">Genres</h3>
+    <ul>
+      <li><a><%=link_to t(:action), action_films_path%></a></li>
+      <li><a><%=link_to t(:comedy), comedy_films_path%></a></li>
+      <li><a><%=link_to t(:documental), other_films_path%></a></li>
+      <li><a><%=link_to t(:history), history_films_path%></a></li>
+      <li><a><%=link_to t(:horror), other_films_path%></a></li>
+      <li><a><%=link_to t(:mystery), other_films_path%></a></li>
+      <li><a><%=link_to t(:war), other_films_path%></a></li>
+      <li><a><%=link_to t(:western), other_films_path%></a></li>
+      <li><a><%=link_to t(:adventure), other_films_path%></a></li>
+      <li><a><%=link_to t(:crime), other_films_path%></a></li>
+      <li><a><%=link_to t(:fantasy), other_films_path%></a></li>
+      <li><a><%=link_to t(:thriller), other_films_path%></a></li>
+    </ul>
+  </div>
+  <div class="widget">
+
+
+
+    <h3 class="widgettitle"><%=t(:opening)%>
+    </h3>
+    <ul>
+    <% last_film.each do |last_film| %>
+      <li>
+        <%= link_to "#{last_film.title}", film_path(last_film.id) %> 
+        </a>
+      </li>
+    <% end %>
+
+    </ul>
+  </div>
+</aside>
