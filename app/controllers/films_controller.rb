@@ -35,7 +35,7 @@ class FilmsController < ApplicationController
   end
 
   def search
-    @search=save_title(params[:search])
+    @search=params[:search].titleize
     @films = Film.where(["title LIKE ?", @search]).paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
     render "all_film"
   end  
@@ -57,7 +57,7 @@ class FilmsController < ApplicationController
   
   def create
     @film = current_user.films.build(film_params)
-    @film.update_attributes(title: save_title(@film.title), language: save_title(@film.language), actor: save_title(@film.actor), subtitle: save_title(@film.subtitle))
+    @film.update_attributes(title: @film.title.titleize, language: @film.language.titleize, actor: @film.actor.titleize, subtitle: @film.subtitle.titleize)
     respond_to do |format|
       if @film.save
         format.html { redirect_to @film, notice: 'Film was successfully created.' }
