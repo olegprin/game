@@ -18,11 +18,11 @@ class SearchesController < ApplicationController
   def search_films
     film=Film.all
 
-    @films=film.where(["title LIKE ?", save_title(params[:search][:title])]) if  params[:search][:title].present?
-    @films=film.where(["year LIKE ?", save_title(params[:search][:year])]) if  params[:search][:year].present?
-    @films=film.where(["language LIKE ?", save_title(params[:search][:language])]) if  params[:search][:language].present?
-    @films=film.where(["actor LIKE ?", save_title(params[:search][:actor])]) if  params[:search][:actor].present?
-    @films=film.where(["subtitle LIKE ?", save_title(params[:search][:subtitle])]) if  params[:search][:subtitle].present?
+    @films=film.where(["title LIKE ?", params[:search][:title].titleize]) if  params[:search][:title].present?
+    @films=film.where(["year LIKE ?", params[:search][:year].titleize]) if  params[:search][:year].present?
+    @films=film.where(["language LIKE ?", params[:search][:language].titleize]) if  params[:search][:language].present?
+    @films=film.where(["actor LIKE ?", params[:search][:actor].titleize]) if  params[:search][:actor].present?
+    @films=film.where(["subtitle LIKE ?", params[:search][:subtitle].titleize]) if  params[:search][:subtitle].present?
     @films=@films.paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
   end
     # Use callbacks to share common setup or constraints between actions.

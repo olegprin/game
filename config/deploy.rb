@@ -7,7 +7,7 @@ set :application, 'cinemalast'
 set :repo_url, 'git@github.com:olegprin/cinemalast.git'
 
 set :deploy_to, '/home/deploy/cinemalast'
-set :shared_children, shared_children + %w{public/uploads}
+
 
 set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
