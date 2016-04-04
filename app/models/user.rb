@@ -3,23 +3,15 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   before_create :user_first
  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable,
-     :omniauthable, :omniauth_providers => [:digitalocean,:google_oauth2, :facebook]
+         :recoverable, :rememberable, :trackable, :validatable,:omniauthable, :omniauth_providers => [:digitalocean,:google_oauth2, :facebook]
 
         
-
-
+  has_many :films
+  has_many :products
   before_destroy { |user| user.comments.destroy_all }
   has_many :comments, dependent: :destroy
   has_one :info, dependent: :destroy
-  has_many :films
-  has_many :messages
-  has_many :actors
-  has_one :blog
-  has_many :postings
-  has_many :invitations
-  has_many :loads, dependent: :destroy
-  has_many :folders, dependent: :destroy
+
   has_many :messagestoadministrators
 
 
@@ -53,9 +45,7 @@ class User < ActiveRecord::Base
   end
   
   def user_first
-    if User.present?
-      true
-    else
+    unless User.first.present?
       self.admin=true
       self.role="admin"
     end
@@ -77,8 +67,8 @@ end
 
 
   def send_notification
-  	AdminMailer.new_user(self).deliver_now
-    #AdminMailer.new_user_admin(self).deliver_now
+    AdminMailer.new_user(self).deliver_now
+    AdminMailer.new_user_admin(self).deliver_now
   end
 
 end

@@ -34,12 +34,12 @@
                 </header>
 
               <div class="row">
-                <div class="col-md-8">
-                  <div class="img-holder"> <%= link_to image_tag(film.uploaded_file.url(:preview)), film_path(film)  %>
-                  </div>
-              
+                <div class="col-md-7">
+   
+                    <%= link_to image_tag(film.uploaded_file.url(:preview)), film_path(film)  %>
+          
                   <div class="meta">
-                    <p class="date"><%= film.created_at %> 
+                    <p class="date">
                       <a><%= link_to info_from_email(film), info_path(info_by_email(film)) %>
                       </a> 
                       <a><%= link_to "Download", film_path(film) %>
@@ -67,10 +67,11 @@
                       &nbsp;
                     </div>
                   </div>
-
+                  
+              
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                   <div class="text_description">
                     <%= insert_text(film.description,490)%>
                   </div>
