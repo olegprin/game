@@ -1,4 +1,4 @@
-body {
+﻿body {
 font-family: Verdana;
 font-size: 12px;
 margin: 0;
@@ -9,20 +9,20 @@ min-width: 1050px;
 }
 
 #adContainer {
-  /*position: absolute;*/
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  /*height: 80%;*/
-  z-index: 1100;
+	/*position: absolute;*/
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	/*height: 80%;*/
+	z-index: 1100;
 }
 #googleInfoBlock {
-  /*position: absolute;*/
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-image: url(../images/background_cover.png);
-  z-index: 1200;
+	/*position: absolute;*/
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-image: url(../images/background_cover.png);
+	z-index: 1200;
 }
 
 #infobody {
@@ -135,9 +135,9 @@ font-weight: normal;
 
 
 #page {
-  width:100%;
-  margin: 10px auto 0;
-  position: relative;
+	width:100%;
+	margin: 10px auto 0;
+	position: relative;
     text-align: center;
 }
 
@@ -153,17 +153,17 @@ margin: 6px -82px 0px 0px;
 
 }
 #knopka_search{
-  width: 28px;
-  background-image: url('images/knopka_search.png'); 
-  float: right; 
+	width: 28px;
+	background-image: url('images/knopka_search.png'); 
+	float: right;	
 }
 #knopka_search:hover{
-  cursor: pointer;
+	cursor: pointer;
 }
 #search_text{
-  width: 130px;
-  border-radius: 4px;
-  height: 28px;
+	width: 130px;
+	border-radius: 4px;
+	height: 28px;
 }
 
 
@@ -173,37 +173,37 @@ margin: 6px -82px 0px 0px;
 }
 
 .game_preview, .game_preview_small  {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .game_preview:hover > .game_preview_title, .game_preview_small:hover > .game_preview_title, .game_preview_big:hover> .game_preview_title{
-  display: block;
+	display: block;
 }
 /*.game_preview:hover, .game_preview_small:hover, .game_preview_big:hover{
    background-color: #D10263;
 }*/
 .game_preview, .game_preview_big{
-  display: inline-block;
+	display: inline-block;
     margin: 5px;
     background-color: #C04996;
     border-radius: 10px;
 }
 
 .game_preview > img {
-  width: 135px;
-  height: 135px;
+	width: 135px;
+	height: 135px;
     border-radius: 10px;
 }
 
 .game_preview_small {
-  margin: 0 3px 7px 3px;
+	margin: 0 3px 7px 3px;
     background-color: #C04996;
     border-radius: 20px;
     display: inline-block;
 }
 .game_preview_small > img {
-  width: 120px;
-  height: 120px;
+	width: 120px;
+	height: 120px;
     /*margin: 3px;*/
     border-radius: 20px;
 }
@@ -225,8 +225,8 @@ margin: 6px -82px 0px 0px;
 }
 .game_preview_small .game_preview_title{
     color: #fff;
-  text-align: center;
-  font-size: 11px;
+	text-align: center;
+	font-size: 11px;
     background-color: #000;
     display: none;
     height: 35px;
@@ -234,12 +234,12 @@ margin: 6px -82px 0px 0px;
     position: absolute;
     margin: -35px 0 0 0;
     opacity: 0.7;
-  border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
 }
 .game_preview_big .game_preview_title, .game_preview_big2 .game_preview_title {
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
     background-color: #473B51;
     display: none;
     height: 50px;
@@ -331,7 +331,7 @@ margin: 6px -82px 0px 0px;
 .b160x600_1 .text, .b160x600_2 .text, .b160x600_1_close .text, .b160x600_2_close .text{
     text-transform: uppercase;
     font-size: 10px;
-  height: 14px; 
+	height: 14px;	
 }
 
 .b160x600_1_close, .b160x600_2_close{
@@ -350,7 +350,7 @@ margin: 6px -82px 0px 0px;
 
 .side_game_1, .side_game_2{
     display: inline-block;
-  width: 140px;
+	width: 140px;
 }
 .side_game_1 a, .side_game_2 a{
     margin: 0 7px 7px 7px;
@@ -373,12 +373,12 @@ margin: 6px -82px 0px 0px;
     border-radius: 5px;
     padding: 10px;
     float: left;
-  text-align: center;
-  margin-bottom: 150px;
+	text-align: center;
+	margin-bottom: 150px;
 }
 #game_zag #title{
     color: #BA2F97;
-  /*color: #663366;*/
+	/*color: #663366;*/
     font-size: 21px;
     height: 20px;
     margin: 0px auto 8px auto;
@@ -391,7 +391,7 @@ margin: 6px -82px 0px 0px;
 #more_game{
     margin: 10px auto;
     display: inline-block;
-  overflow: hidden;
+	overflow: hidden;
 }
 #more_game #title{
     color: #600;
@@ -456,7 +456,7 @@ margin-left: 10px;
 #link_home{
     width: 103px;
     height:63px;
-  margin: 0 25px 0 155px;
+	margin: 0 25px 0 155px;
 }
 #link_cat{
     width: 86px;
@@ -484,21 +484,21 @@ margin-left: 10px;
 }
 /*#link_cat, #link_home{
     display: inline-block;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: Comic Sans MS;
-  font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Comic Sans MS;
+	font-size: 14px;
 }
 #link_cat{
     margin-left: 20px;
-  width: 92px;
+	width: 92px;
     height: 78px;
 }
 #link_cat img{
-  margin: 0 auto;
+	margin: 0 auto;
 }
 #link_home{    
-  margin-left: 160px;
+	margin-left: 160px;
     width: 64px;
     height: 75px;
 }*/
@@ -521,8 +521,8 @@ margin-left: 10px;
 
 #game_title{
     /*color: #BA2F97;*/
-  /*color: #C04996;*/
-  color: #663366;
+	/*color: #C04996;*/
+	color: #663366;
     font-size: 21px;
     margin: 10px auto 0 auto;
     font-family: Comic Sans MS;
@@ -531,32 +531,32 @@ margin-left: 10px;
 }
 
 #b300x250 {
-  width: 300px;
-  margin: 20px 0px 0 68px;
-  text-align: center;
-  color: #666;
-  font-size: 12px;
-  float: left;
+	width: 300px;
+	margin: 20px 0px 0 68px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	float: left;
 }
 #b336x280_top_left{
-  width: 336px;
-  margin: 20px 0px 0 60px;
-  text-align: center;
-  color: #666;
-  font-size: 12px;
-  float: left;
+	width: 336px;
+	margin: 20px 0px 0 60px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	float: left;
 }
 
 #gamebigscreen1, #gamebigscreen2{
-  text-align: center;
-  color: #000;
-  font-size: 14px;
+	text-align: center;
+	color: #000;
+	font-size: 14px;
 }
 #gamebigscreen1 {
     margin: 20px 60px 0 0 ;
-    float: right; 
-  color: #666;
-  font-size: 12px;
+    float: right;	
+	color: #666;
+	font-size: 12px;
 }
 
 #gamebigscreen2{
@@ -882,8 +882,8 @@ margin: 0 auto;
     height: 50px;
 }
 #main_text{
-  margin: 5px 10%;
-  color: #fff;
+	margin: 5px 10%;
+	color: #fff;
 }
 
 .abig:hover {
@@ -927,5 +927,5 @@ border-color:#9F4578;
 }
 
 #li_{
-  width:31px;
+	width:31px;
 }
