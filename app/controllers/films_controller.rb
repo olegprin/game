@@ -109,42 +109,7 @@ class FilmsController < ApplicationController
     render "all_film"
   end 
   
-  def top_rated
-    d=Voice.where('votable_type = ? AND vote_flag = ?', "Film", true)
-      @a=d.order('sum_voices DESC')
-   @films=[]
-      @a.each do |c| 
-      s=Film.find(c.votable_id)
-        @films<<s
-      
-      end
-      @films
-    #@top_rated=params[:films][:top_rated]  
-    #@films = Film.where(id: (Voice.where(["votable_type LIKE ?", "Film"])).id).paginate(:page => params[:page], :per_page => 8)
-    render "all_film"
-  end
 
-  def latest
-    @films = Film.order('created_at DESC').paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
-    render "all_film"
-  end
-
-  def comedy
-    @films = Film.where(category: ["Comedy", "Комедия"]).paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
-    render "all_film"
-  end
-
-  def history
-    @films = Film.where(category: ["History", "Историческое"]).paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
-    render "all_film"
-  end  
-
-
-  def get 
-    if @film
-      send_file @film.down_file.path, :type => @film.down_file_content_type 
-    end
-  end
 
  def save_title(title)
     title.chomp.titleize

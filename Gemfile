@@ -35,7 +35,7 @@ gem 'omniauth-digitalocean'
 
 gem 'cancancan'
 gem 'will_paginate'
-gem "pg"
+#gem "pg"
 gem 'spring'
 gem 'rake','11.1.1'
 gem 'tire'
