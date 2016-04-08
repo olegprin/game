@@ -4,66 +4,44 @@
       README.md
     </h3>
 
-      <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-jquery-rails" class="anchor" href="#jquery-rails" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>jquery-rails</h1>
+      <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-diaspora" class="anchor" href="#diaspora" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>diaspora*</h1>
 
-<p>jQuery! For Rails! So great.</p>
+<h3><a id="user-content-a-privacy-aware-distributed-open-source-social-network" class="anchor" href="#a-privacy-aware-distributed-open-source-social-network" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>A privacy-aware, distributed, open source social network</h3>
 
-<p>This gem provides:</p>
+<p><strong>master:</strong> <a href="http://travis-ci.org/diaspora/diaspora"><img src="https://camo.githubusercontent.com/9b7b1691edd3c75c73742c8684ee97411d65751f/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f64696173706f72612f64696173706f72612e706e673f6272616e63683d6d6173746572" alt="Build Status master" data-canonical-src="https://secure.travis-ci.org/diaspora/diaspora.png?branch=master" style="max-width:100%;"></a>
+<strong>stable:</strong> <a href="http://travis-ci.org/diaspora/diaspora"><img src="https://camo.githubusercontent.com/626e93ecb12855764002020ec80bc44c5142286a/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f64696173706f72612f64696173706f72612e706e673f6272616e63683d737461626c65" alt="Build Status stable" data-canonical-src="https://secure.travis-ci.org/diaspora/diaspora.png?branch=stable" style="max-width:100%;"></a> |
+<strong>develop:</strong> <a href="http://travis-ci.org/diaspora/diaspora"><img src="https://camo.githubusercontent.com/1ed644ea5c44f46755b7a1bc0fd429be928bd14c/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f64696173706f72612f64696173706f72612e706e673f6272616e63683d646576656c6f70" alt="Build Status develop" data-canonical-src="https://secure.travis-ci.org/diaspora/diaspora.png?branch=develop" style="max-width:100%;"></a> |
+<a href="https://gemnasium.com/diaspora/diaspora"><img src="https://camo.githubusercontent.com/738e306aafa6ef1aba60a438fd359eac2f412d4a/68747470733a2f2f67656d6e617369756d2e636f6d2f64696173706f72612f64696173706f72612e706e673f747261766973" alt="Dependency Status" data-canonical-src="https://gemnasium.com/diaspora/diaspora.png?travis" style="max-width:100%;"></a>
+<a href="https://codeclimate.com/github/diaspora/diaspora"><img src="https://camo.githubusercontent.com/6d71ebdd8af27e7eb5f0411bf4ab5dbe01cdf2f6/68747470733a2f2f636f6465636c696d6174652e636f6d2f6769746875622f64696173706f72612f64696173706f72612e706e67" alt="Code Climate" data-canonical-src="https://codeclimate.com/github/diaspora/diaspora.png" style="max-width:100%;"></a></p>
 
-<ul>
-<li>jQuery 1 and jQuery 2</li>
-<li>the jQuery UJS adapter</li>
-<li>assert_select_jquery to test jQuery responses in Ruby tests</li>
-</ul>
-
-<h2><a id="user-content-versions" class="anchor" href="#versions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Versions</h2>
-
-<p>Starting with v2.1, the jquery-rails gem follows these version guidelines
-to provide more control over your app's jQuery version from your Gemfile:</p>
-
-<pre><code>patch version bump = updates to jquery-ujs, jquery-rails, and patch-level updates to jQuery
-minor version bump = minor-level updates to jQuery
-major version bump = major-level updates to jQuery and updates to Rails which may be backwards-incompatible
-</code></pre>
-
-<p>See <a href="/rails/jquery-rails/blob/master/VERSIONS.md">VERSIONS.md</a> to see which versions of jquery-rails bundle which
-versions of jQuery.</p>
+<p><a href="https://diasporafoundation.org">Project site</a> |
+<a href="https://wiki.diasporafoundation.org">Wiki</a> |
+<a href="https://github.com/diaspora/diaspora/issues">Bugtracker</a> |
+<a href="https://www.loomio.org/groups/194">Discussions</a> |
+<a href="https://wiki.diasporafoundation.org/How_We_Communicate#Mailing_Lists">Mailing lists</a> |
+<a href="/diaspora/diaspora/blob/develop/COPYRIGHT">License</a> |
+<a href="https://github.com/diaspora/diaspora/contributors">Authors</a></p>
 
 <h2><a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Installation</h2>
 
-<p>The jquery and jquery-ujs files will be added to the asset pipeline and available for you to use. If they're not already in <code>app/assets/javascripts/application.js</code> by default, add these lines:</p>
+<p>You don't have to install diaspora* to use the network. There are many servers connected to diaspora*s network which are open to anyone, and you can create an account on one of these servers. Have a look at our <a href="https://wiki.diasporafoundation.org/Choosing_a_pod">tips for finding a home</a>, or you can just go straight to the <a href="http://podupti.me">list of open servers</a> to sign up.</p>
 
-<div class="highlight highlight-source-js"><pre><span class="pl-c">//= require jquery</span>
-<span class="pl-c">//= require jquery_ujs</span></pre></div>
+<p>Want to own your data and install diaspora*? Whether you just want to try it out, want to install it on your server or want to contribute and need a development setup, our <a href="https://wiki.diasporafoundation.org/Installation">installation guides</a> will get you started!</p>
 
-<p>If you want to use jQuery 2, you can require <code>jquery2</code> instead:</p>
+<h2><a id="user-content-questions" class="anchor" href="#questions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Questions?</h2>
 
-<div class="highlight highlight-source-js"><pre><span class="pl-c">//= require jquery2</span>
-<span class="pl-c">//= require jquery_ujs</span></pre></div>
+<p>Have a look at our FAQs <a href="https://wiki.diasporafoundation.org/FAQ_for_users">for users</a>, <a href="https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers">for pod administrators</a> or <a href="https://wiki.diasporafoundation.org/FAQ_for_developers">for developers</a>.</p>
 
-<p>For jQuery UI, we recommend the <a href="https://github.com/joliss/jquery-ui-rails">jquery-ui-rails</a> gem, as it includes the jquery-ui css and allows easier customization.</p>
+<p>Still haven't found an answer? Talk to us! Read <a href="https://wiki.diasporafoundation.org/How_we_communicate">how we communicate</a>. We're here to answer all your questions.</p>
 
-<p><em>As of v3.0, jquery-rails no longer includes jQuery UI. Use the
-jquery-ui-rails gem above.</em></p>
+<h2><a id="user-content-contribute" class="anchor" href="#contribute" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Contribute</h2>
 
-<h2><a id="user-content-contributing-to-jquery-rails" class="anchor" href="#contributing-to-jquery-rails" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Contributing to jquery-rails</h2>
+<p>To keep diaspora*  growing and improving we need all help we can get. Whether you can contribute <a href="https://wiki.diasporafoundation.org/Getting_started_with_contributing">code</a>, <a href="https://wiki.diasporafoundation.org/How_we_communicate#Loomio">ideas</a>, <a href="https://wiki.diasporafoundation.org/Contribute_translations">translations</a>, <a href="https://wiki.diasporafoundation.org/How_to_report_a_bug">bug reports</a> or simply extend the community as a <a href="https://wiki.diasporafoundation.org/Welcoming_committee">helpful user</a> or <a href="https://wiki.diasporafoundation.org/Installation">pod administrator</a>, your help is welcome!</p>
 
-<p>jquery-rails is work of many contributors. You're encouraged to submit pull requests, propose
-features and discuss issues.</p>
+<p>Everyone interacting in diaspora’s codebases, issue trackers, chat rooms, mailing lists, the wiki, and the Loomio group is expected to follow the diaspora* <a href="/diaspora/diaspora/blob/develop/CODE_OF_CONDUCT.md">code of conduct</a>.</p>
 
-<ul>
-<li><p>If it's an issue pertaining to the jquery-ujs javascript, please report it to the <a href="https://github.com/rails/jquery-ujs">jquery-ujs project</a>.</p></li>
-<li><p>If the jQuery scripts are outdated (i.e. maybe a new version of jquery was released yesterday), feel free to open an issue and prod us to get that thing updated. However, for security reasons, we won't be accepting pull requests with updated jQuery scripts.</p></li>
-</ul>
+<h2><a id="user-content-security" class="anchor" href="#security" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Security</h2>
 
-<p>See <a href="/rails/jquery-rails/blob/master/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
-
-<h2><a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>License</h2>
-
-<p>jquery-rails is released under the <a href="/MIT-LICENSE.md">MIT License</a>.</p>
-
-<h2><a id="user-content-acknowledgements" class="anchor" href="#acknowledgements" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Acknowledgements</h2>
-
-<p>Many thanks are due to all of <a href="https://github.com/rails/jquery-rails/graphs/contributors">the jquery-rails contributors</a>. Special thanks to <a href="http://github.com/JangoSteve">JangoSteve</a> for tirelessly answering questions and accepting patches, and the <a href="https://github.com/organizations/rails/teams/617">Rails Core Team</a> for making jquery-rails an official part of Rails 3.1.</p>
+<p>Found a security issue? Please disclose it responsibly. We have a team of developers listening to <a href="mailto:security@diasporafoundation.org">security@diasporafoundation.org</a>. The PGP fingerprint is <a href="https://pgp.mit.edu/pks/lookup?op=get&amp;search=0x6F70243F27AD886A">AB0D AB02 0FC5 D398 03AB 3CE1 6F70 243F 27AD 886A</a>.</p>
 </article>
   
