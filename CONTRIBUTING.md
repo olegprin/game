@@ -32,7 +32,7 @@
 
 <p><a href="https://travis-ci.org/rails/jquery-rails"><img src="https://camo.githubusercontent.com/1b63bfdd05169e8f075005e5061865509b867890/68747470733a2f2f7472617669732d63692e6f72672f7261696c732f6a71756572792d7261696c732e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/rails/jquery-rails.svg?branch=master" style="max-width:100%;"></a></p>
 
-<p>jquery-rails is work of <a href="https://github.com/rails/jquery-rails/graphs/contributors">many contributors</a>. You're encouraged to submit <a href="https://github.com/rails/jquery-rails/pulls">pull requests</a>, <a href="https://github.com/rails/jquery-rails/issues">propose features and discuss issues</a>.</p>
+<p>jquery-rails is work of <a href="https://github.com/rails/jquery-rails/graphs/contributors">many contributors</a>. You're encouraged to submit <a href="https://github.com/rails/jquery-rails/pulls">pull requests</a>,propose features and discuss issues</a>.</p>
 
 <h4><a id="user-content-updating-jquery" class="anchor" href="#updating-jquery" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Updating jQuery</h4>
 
@@ -40,17 +40,13 @@
 
 <h4><a id="user-content-changes-to-jquery_ujsjs" class="anchor" href="#changes-to-jquery_ujsjs" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Changes to jquery_ujs.js</h4>
 
-<p><strong>If it's an issue pertaining to the jquery-ujs javascript, please
-report it to the <a href="https://github.com/rails/jquery-ujs/issues">rails/jquery-ujs project</a>.</strong></p>
+
 
 <h4><a id="user-content-fork-the-project" class="anchor" href="#fork-the-project" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Fork the Project</h4>
 
-<p>Fork the <a href="https://github.com/rails/jquery-rails">project on Github</a> and check out your copy.</p>
+<p>Fork the <a href="https://github.com/rails/">project on Github</a> and check out your copy.</p>
 
-<pre><code>git clone https://github.com/contributor/jquery-rails.git
-cd jquery-rails
-git remote add upstream https://github.com/rails/jquery-rails.git
-</code></pre>
+
 
 <h4><a id="user-content-create-a-topic-branch" class="anchor" href="#create-a-topic-branch" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Create a Topic Branch</h4>
 
@@ -105,7 +101,7 @@ version of the gem with your updates: <code>gem 'jquery-rails', :path =&gt; '../
 
 <h4><a id="user-content-write-documentation" class="anchor" href="#write-documentation" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Write Documentation</h4>
 
-<p>Document any external behavior in the <a href="/rails/jquery-rails/blob/master/README.md">README</a>.</p>
+<p>Document any external behavior in theREADME</a>.</p>
 
 <h4><a id="user-content-commit-changes" class="anchor" href="#commit-changes" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Commit Changes</h4>
 
@@ -153,3 +149,4 @@ git push origin my-feature-branch -f
 </article>
   </div>
 
+href

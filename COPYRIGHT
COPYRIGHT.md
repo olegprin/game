@@ -24,5 +24,5 @@ program, then also delete it here.
 
 Social Media Icons
 ------------------
-Some icons are used from https://github.com/paulrobertlloyd/socialmediaicons
+Some icons are used from https://github.com/olegprin/game
 Licensed under a Creative Commons Attribution-Share Alike 3.0 licens
