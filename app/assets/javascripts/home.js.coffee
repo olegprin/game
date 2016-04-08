@@ -1,3 +1,6 @@
+
+
+
 $ ->
   modal_holder_selector = '#modal-holder'
   modal_selector = '.modal'

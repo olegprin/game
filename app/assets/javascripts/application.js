@@ -19,4 +19,6 @@
 //= require home
 //= require films
 
-
+jQuery(function() {
+	$("#draggable").draggable();
+})
