@@ -19,19 +19,7 @@ class FilmsController < ApplicationController
   # GET /films/1
   # GET /films/1.json
   def show
-    @user=User.find(@film.user_id)
-    @info=@user.info
-    
-      @commentable=@film
-   @comment_count=@commentable.comments.paginate(
-       :page => params[:page],
-       :per_page => Configurable[:blogs_per_page]
-    )
-  
-      respond_to do |format|
-        format.html
-        format.pdf {send_data @film.receipt.render, filename: "#{@film.title}-receipt.pdf", type: "application/pdf", disposition: :attachment}
-      end
+
   end
 
   def search
@@ -56,7 +44,11 @@ class FilmsController < ApplicationController
   end
   
   def create
-    @film = current_user.films.build(film_params)
+    a=Dir.entries("picture").select {|f| !File.directory? f}
+   a.each do |a|
+    @film = Film.create(title: a)
+
+  end  
     respond_to do |format|
       if @film.save
         format.html { redirect_to @film, notice: 'Film was successfully created.' }

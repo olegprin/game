@@ -23,9 +23,11 @@
 <body>
     <div id="lines">
         <div id="line1">
-            <a id="logo" href="http://www.fungoomy.com/">
-                <img src="Thousands%20of%20free%20online%20games%20at%20Fungoomy.Com_files/logo.png">
-      </a>                              
+
+
+              <%= link_to image_tag("/assets/logo.png"), root_path, :alt => "logo", :id=>"logo" %>
+      
+                               
                       
             <div id="searchtop">                            
             <form method="get" style="margin-top: 68px;" action="/search"><!--  style="display: table-cell;"  -->
@@ -60,21 +62,22 @@ var startTimeout=setTimeout(bcStart,3E3),startScript=null,retTimeout=null,indexR
 var TRe=navigator.userAgent.toLowerCase(),TRf=-1!=TRe.indexOf("opera"),TRg=-1!=TRe.indexOf("chrome"),TRh=1236,TRk="0.5",TRp=450,TRr=5,TRt=!getV("TR_CL")||(getV("TR_CL")<TRr-1||0==TRr)?"1":"2";
 </script>
     <div id="content">
-      <a class="game_preview" href="http://www.fungoomy.com/gameinf/disney_photo_booth">
-        <div class="new"></div>
-        <img src="Thousands%20of%20free%20online%20games%20at%20Fungoomy.Com_files/disney_photo_booth.jpg" alt="game Disney Photo Booth">
-        <div class="game_preview_title">Disney Photo Booth</div>
-      </a>
+      <%@films.each do |film|%>
+      
             
-    
-      <a class="game_preview" href="http://www.fungoomy.com/gameinf/diy_jewellery_creator">
+
+        <a class="game_preview">     
+          <%= link_to image_tag(film.uploaded_file), film_path(film), class: "game_preview"%>
         <div class="new"></div>
-        <img src="Thousands%20of%20free%20online%20games%20at%20Fungoomy.Com_files/diy_jewellery_creator.jpg" alt="game DIY Jewellery Creator">
-        <div class="game_preview_title">DIY Jewellery Creator</div>
-      </a>
+          <div class="game_preview_title"><%=film.title%></div>
+        </a>
 
-              
 
+
+      <%end%>
+            
+
+      
 
     
       

@@ -36,12 +36,11 @@
               <div class="row">
                 <div class="col-md-7">
    
-                    <%= link_to image_tag(film.uploaded_file.url(:preview)), film_path(film)  %>
+           
           
                   <div class="meta">
                     <p class="date">
-                      <a><%= link_to info_from_email(film), info_path(info_by_email(film)) %>
-                      </a> 
+                   
                       <a><%= link_to "Download", film_path(film) %>
                       </a> 
                           <% if signed_in? %>

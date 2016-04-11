@@ -57,7 +57,7 @@
         <div id="gamebigscreen1">
             <p>Screenshot</p>
             <div class="img_ramka">
-           <img alt="game Hipster Girl Summer Edition" src="show_game_files/hipster_girl_summer_edition.jpg">
+           <%= image_tag(@film.uploaded_file)%>
             </div>
     </div>
     
@@ -126,7 +126,7 @@ your skills and make the hipster girl look stunning today!</span>
   </div>
     <div id="cont_game2">
         <div id="small_screen">
-            <img src="show_game_files/hipster_girl_summer_edition.jpg">
+             <%= image_tag(@film.uploaded_file)%>
         </div>        
         <a id="download" href="http://www.fungoomy.com/"></a><a id="green_button" href="http://www.fungoomy.com/game/hipster_girl_summer_edition"></a>        
         <div class="af"></div>
@@ -184,17 +184,9 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
 
 
-<body>
-  <div id="main">
-    <div id="site_content">
-      <div id="sidebar_container">
+
    
 
-        <div class="col-md-4">
-          <div class="gallery">
-            <div class="images">
-             <%= image_tag @film.uploaded_file.url(:preview) %>
-              <div class="link_all"> 
                 <%= ui_button 'back',  t(:back), :back%>  
                 <%if user_signed_in?%>  
                   <%if can_manage(current_user.films, @film, Film)%>
@@ -202,20 +194,8 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
                    <%= ui_button 'delete',  t(:destroy), film_path(@film), method: :delete%>
                   <%end%>
                 <%end%>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</body>
+  
 
-
-
-
-</div>
 
 
 
