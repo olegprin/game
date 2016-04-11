@@ -6,12 +6,7 @@ class Film < ActiveRecord::Base
   has_one :user
   has_many :voices
   
-  validates :title, :category, :actor, :language, :year, presence: true
-
-  validates :description, presence: true, :length => {
-    :minimum =>40}
-  after_create :send_film_to_user
-
+ 
   if I18n.locale == :en 
     CATEGORY = %w[Action Comedy History Other] 
   else I18n.locale == :ru 
@@ -20,7 +15,6 @@ class Film < ActiveRecord::Base
   
   @model_of_attachment='uploaded_file'.parameterize.underscore.to_sym
 
-  
 
   include ValidationsForPicture
   include ValidationsForTorent 

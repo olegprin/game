@@ -1,3 +1,6 @@
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t45.15;r");
+
 $(document).ready ->
   $(".btn-info").click ->
     $("#comment_hide").toggle("slow");

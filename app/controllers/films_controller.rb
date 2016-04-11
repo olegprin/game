@@ -57,7 +57,6 @@ class FilmsController < ApplicationController
   
   def create
     @film = current_user.films.build(film_params)
-    @film.update_attributes(title: @film.title.titleize, language: @film.language.titleize, actor: @film.actor.titleize, subtitle: @film.subtitle.titleize)
     respond_to do |format|
       if @film.save
         format.html { redirect_to @film, notice: 'Film was successfully created.' }

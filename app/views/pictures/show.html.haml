@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Picture:
+  = @picture.picture
+%p
+  %b Flash:
+  = @picture.flash
+
+= link_to 'Edit', edit_picture_path(@picture)
+\|
+= link_to 'Back', pictures_path

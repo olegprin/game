@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   
   
 
+  resources :pictures
+  get 'picture/picture'
+
+  get 'picture/game'
+
   resources :comments
 
   resources :searches

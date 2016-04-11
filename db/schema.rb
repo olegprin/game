@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160328220641) do
+ActiveRecord::Schema.define(version: 20160410234011) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -70,6 +70,13 @@ ActiveRecord::Schema.define(version: 20160328220641) do
   end
 
   add_index "infos", ["user_id"], name: "index_infos_on_user_id"
+
+  create_table "pictures", force: :cascade do |t|
+    t.string   "picture"
+    t.string   "flash"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "searches", force: :cascade do |t|
     t.integer  "year"
