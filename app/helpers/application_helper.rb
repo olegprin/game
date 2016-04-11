@@ -25,6 +25,12 @@ module ApplicationHelper
 
     html.html_safe
   end
+  
+  def custom_assets(source, ext)
+  path = File.join(Rails.root, 'assets', source) + ext
+  asset_id = File.exist?(path) ? File.mtime(path).to_i.to_s : ''
+  "#{source}?#{asset_id}"
+end
 
   def current_info
     Info.find_by_user_id(current_user.id)
