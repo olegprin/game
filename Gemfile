@@ -24,7 +24,7 @@ gem 'sass-rails'
 
 
 gem 'jquery-ui-rails'
-
+gem 'markdown-rails'
 gem 'redcarpet'
 
 gem 'devise'

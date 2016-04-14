@@ -20,6 +20,7 @@
 //= require films
 //= require swfobject
 
+<<<<<<< HEAD
 $('#showSWFButton').click(function(){
     setTimeout(showSWF,10000) //10 000 milliseconds = 10 seconds
 })
@@ -28,3 +29,8 @@ function showSWF(){
     $('#SWF').show();
 }
 
+=======
+jQuery(function() {
+	$("#draggable").draggable();
+})
+>>>>>>> 955cfc217117025d3b926252aca2430a727cad21

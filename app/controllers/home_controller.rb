@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
 
+<<<<<<< HEAD
  def index
     
  end 
@@ -9,3 +10,9 @@ class HomeController < ApplicationController
  end 
 
 end  
+=======
+	def index
+
+	end	
+end	
+>>>>>>> 955cfc217117025d3b926252aca2430a727cad21
