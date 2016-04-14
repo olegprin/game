@@ -18,5 +18,13 @@
 //= require jquery.turbolinks
 //= require home
 //= require films
+//= require swfobject
 
+$('#showSWFButton').click(function(){
+    setTimeout(showSWF,10000) //10 000 milliseconds = 10 seconds
+})
+
+function showSWF(){
+    $('#SWF').show();
+}
 

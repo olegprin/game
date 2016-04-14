@@ -1,7 +1,7 @@
 class FilmsController < ApplicationController
 
 
-  before_action :authenticate_user!, :only => [:edit, :new, :create, :update,:destroy]  
+  #before_action :authenticate_user!, :only => [:edit, :new, :create, :update,:destroy]  
   #load_and_authorize_resource
   
   before_action :set_film, only: [:show_modal,:get, :upload, :show, :edit, :update, :destroy, :upvote, :downvote ]
@@ -85,9 +85,8 @@ class FilmsController < ApplicationController
     end
   end
 
-  def horror 
-    @films = Film.where(["category LIKE ?", "Horror"]).paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
-    render "all_film" 
+  def play_game 
+    @film = Film.find(params[:id])
   end 
 
   def other

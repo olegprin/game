@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Game:
+  = @flash.game
+
+= link_to 'Edit', edit_flash_path(@flash)
+\|
+= link_to 'Back', flashes_path

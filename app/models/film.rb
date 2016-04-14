@@ -5,7 +5,7 @@ class Film < ActiveRecord::Base
   has_many :comments, as: :commentable
   has_one :user
   has_many :voices
-  
+  has_one :flash
  
   if I18n.locale == :en 
     CATEGORY = %w[Action Comedy History Other] 

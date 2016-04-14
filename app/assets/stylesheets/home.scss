@@ -4,7 +4,7 @@ font-family: Verdana;
 font-size: 12px;
 margin: 0;
 padding: 0;
-/*background: url("images/bg.jpg") repeat-x scroll left top #C34D86;*/
+/*background: url("/assets/bg.jpg") repeat-x scroll left top #C34D86;*/
 background-color: #90EE51;
 min-width: 1050px;
 }
@@ -102,7 +102,7 @@ font-weight: normal;
     width: 100%;
 }
 #line1{
-    background: #FDF769 url("images/bg_circle.png") repeat-x scroll left bottom;
+    background: #FDF769 url("/assets/bg_circle.png") repeat-x scroll left bottom;
     height: 155px;
 }
 #line2{
@@ -116,10 +116,10 @@ font-weight: normal;
     margin: 5px;
 }
 #top_game{
-    background: url('images/top_game.png') no-repeat; 
+    background: url('/assets/top_game.png') no-repeat; 
 }
 #new_game{
-    background: url('images/new_game.png') no-repeat; 
+    background: url('/assets/new_game.png') no-repeat; 
 }
 #our_game{
     background: url('images/our_game.png') no-repeat; 
@@ -155,7 +155,7 @@ margin: 6px -82px 0px 0px;
 }
 #knopka_search{
   width: 28px;
-  background-image: url('images/knopka_search.png'); 
+  background-image: url('/assets/knopka_search.png'); 
   float: right; 
 }
 #knopka_search:hover{
@@ -441,13 +441,13 @@ margin: 6px -82px 0px 0px;
 
 .imgs {
 width: 43px; height: 43px;
-background: url('images/search_button.png') no-repeat;
+background: url('/assets/search_button.png') no-repeat;
 float: right;
 cursor: pointer;
 margin-left: 10px;
 }
 .imgs:hover{
-    background: url('images/search_button_.png') no-repeat;
+    background: url('/assets/search_button_.png') no-repeat;
 }
 
 
@@ -587,10 +587,10 @@ border-radius: 8px;
     margin: 27px 0 0 20px;
 }
 #green_button{
-    background: url('images/green_button.png') no-repeat;
+    background: url('/assets/green_button.png') no-repeat;
 }
 #download{
-    background: url('images/download.png') no-repeat;
+    background: url('/assets/download.png') no-repeat;
 }
 
 
@@ -910,7 +910,7 @@ font-family: Comic Sans MS;
     overflow: hidden;
 }
 
-.category img{
+.category a{
     width: 70px;
     height: 70px;
     border: solid 3px #FFC425;
@@ -930,9 +930,4 @@ border-color:#9F4578;
 #li_{
   width:31px;
 }
-
-
-
-
-
 

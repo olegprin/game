@@ -8,7 +8,7 @@ gem 'sqlite3'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'bootstrap_form'
-
+gem "swfobject-rails"
 gem 'coffee-rails'
 
 gem 'jquery-rails'

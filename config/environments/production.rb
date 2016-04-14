@@ -85,7 +85,6 @@ config.action_mailer.raise_delivery_errors = false
   config.active_record.dump_schema_after_migration = false
 
 
-
   # ADDDD
   config.serve_static_files = true
   config.assets.css_compressor = :sass

@@ -1,0 +1,21 @@
+%h1 Listing flashes
+
+%table
+  %thead
+    %tr
+      %th Game
+      %th
+      %th
+      %th
+
+  %tbody
+    - @flashes.each do |flash|
+      %tr
+        %td= flash.game
+        %td= link_to 'Show', flash
+        %td= link_to 'Edit', edit_flash_path(flash)
+        %td= link_to 'Destroy', flash, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Flash', new_flash_path

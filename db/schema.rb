@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160410234011) do
+ActiveRecord::Schema.define(version: 20160413172018) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "upload_picture_file_name"
+    t.string   "upload_picture_content_type"
+    t.integer  "upload_picture_file_size"
+    t.datetime "upload_picture_updated_at"
+    t.string   "category"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -49,6 +59,16 @@ ActiveRecord::Schema.define(version: 20160410234011) do
     t.boolean  "send_new_film",              default: true
     t.datetime "created_at",                                null: false
     t.datetime "updated_at",                                null: false
+  end
+
+  create_table "flashes", force: :cascade do |t|
+    t.integer  "film_id"
+    t.string   "down_file_file_name"
+    t.string   "down_file_content_type"
+    t.integer  "down_file_file_size"
+    t.datetime "down_file_updated_at"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "infos", force: :cascade do |t|
