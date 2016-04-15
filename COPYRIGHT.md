@@ -1,11 +1,11 @@
-Diaspora is copyright Diaspora Inc., 2010, and files herein are licensed
+Game is copyright Game Inc., 2010, and files herein are licensed
 under the Affero General Public License version 3, the text of which can
 be found in GNU-AGPL-3.0, or any later version of the AGPL, unless otherwise
-noted.  Components of Diaspora, including Rails, JQuery, and Devise, are
+noted.  Components of Game, including Rails, JQuery, and Devise, are
 licensed under the MIT/X11 license.  Blueprint-CSS is licensed under a
 modified version of the MIT/X11 license.  All unmodified files from these
 and other sources retain their original copyright and license notices: see
-the relevant individual files.  Attribution information for Diaspora is
+the relevant individual files.  Attribution information for Game is
 contained in the AUTHORS file.
 
 In addition, as a special exception, the copyright holders give
