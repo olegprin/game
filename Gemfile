@@ -34,7 +34,7 @@ gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'omniauth-digitalocean'
 
 gem 'cancancan'
-gem 'will_paginate'
+gem 'will_paginate', '~> 3.0.7'
 #gem "pg"
 gem 'spring'
 gem 'rake','11.1.1'

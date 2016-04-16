@@ -18,19 +18,22 @@
 //= require jquery.turbolinks
 //= require home
 //= require films
-//= require swfobject
 
-<<<<<<< HEAD
-$('#showSWFButton').click(function(){
-    setTimeout(showSWF,10000) //10 000 milliseconds = 10 seconds
-})
 
-function showSWF(){
-    $('#SWF').show();
-}
 
-=======
-jQuery(function() {
-	$("#draggable").draggable();
-})
->>>>>>> 955cfc217117025d3b926252aca2430a727cad21
+
+$(document).ready(function() {
+  if ($('.pagination').length) {
+    $(window).scroll(function() {
+      var url = $('.pagination .next_page').attr('href');
+      if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+        $('.pagination').text("Please Wait...");
+        return $.getScript(url);
+      }
+    });
+    return $(window).scroll();
+  }
+});
+
+
+

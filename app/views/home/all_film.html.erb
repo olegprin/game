@@ -1,52 +1,25 @@
-
-
-
-
+<%#= link_to "registration", new_user_registration_path  %>
+<%if current_user.present?%>
+<%= link_to "logout", destroy_user_session_path, :method => :delete%>
+<%end%>
     <div id="content">
-      <%@films.each do |film|%>
       
-            
-
-        <a class="game_preview">     
-          <%= link_to image_tag(film.uploaded_file), film_path(film), class: "game_preview"%>
-        <div class="new"></div>
-          <div class="game_preview_title"><%=film.title%></div>
-        </a>
-
-
-
-      <%end%>
-            
-
-      
-
-    
-      
-    
-    
-            
-    
-
-        
-        
-
+         <%=render("home/all_film")%>
   
-
-            
     </div>
+
+
+     <div class="pagination">
+        <%= will_paginate(@films) %> 
+      </div> 
+
+
 <div class="af"></div>
 <div id="bottom"></div>
 <p id="main_text">  
   <br><br>  
 </p>
-<script>
-$(document).ready(function(){
-if("function"==typeof window.addEventListener)
-        window.addEventListener("load",function(){clearInterval(startTimeout);bcStart()},!1);
-    else 
-        try{window.attachEvent("onload",function(){clearInterval(startTimeout);bcStart()})}catch(D){} 
-});
-</script>
+
 
   </div> <!--page-->
 

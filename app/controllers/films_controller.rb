@@ -87,6 +87,11 @@ class FilmsController < ApplicationController
 
   def play_game 
     @film = Film.find(params[:id])
+    @film.update_attributes(played: (@film.played+1))
+    @films=Film.where(category: @film.category).sample(16)
+    @films_left=@films[0..4]
+    @films_right=@films[5..9]
+    @films_down=@films[10..15]
   end 
 
   def other
@@ -136,7 +141,7 @@ class FilmsController < ApplicationController
   private
 
   def define_eccept   
-    if current_user.films.where(id: @film.id).present? || can_manage(current_user.films, @film, Film)
+    if current_user.admin=="t"
       return true
     else
       redirect_to root_path 
@@ -153,7 +158,7 @@ class FilmsController < ApplicationController
   
   # Never trust parameters from the scary internet, only allow the white list through.
   def film_params
-    params.require(:film).permit(:send_new_film,:title, :description, :category, :actor, :subtitle, :language, :year,:image, :uploaded_file, :remove_image, :user_id, :down_file)
+    params.require(:film).permit(:year,:title, :description, :category, :played, :subtitle, :rating, :year,:image, :uploaded_file, :remove_image, :user_id, :down_file)
   end
 
 end

@@ -10,6 +10,8 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @films=Film.where(category: @category.category)
+    render "home/all_film"
   end
 
   # GET /categories/new

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   
   
+  # app/config/routes.rb
+  devise_for :users, :controllers => {:registrations => "registrations"}
   resources :categories
   resources :flashes
   resources :pictures
@@ -57,7 +59,7 @@ Rails.application.routes.draw do
     #collection do
     #end
   #end
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  #devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   get '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
 
   

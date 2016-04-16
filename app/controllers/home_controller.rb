@@ -1,18 +1,20 @@
 class HomeController < ApplicationController
 
-<<<<<<< HEAD
+respond_to :html, :js, :json
+
  def index
     
  end 
 
  def all_film
-    @films=Film.all
- end 
+    @films=Film.all.paginate(:page => params[:page], :per_page => Configurable['films_per_page']).order('created_at DESC')
+    respond_to do |format|
+        format.html { }
+        format.json {  }
+        format.js { }
+    end   
+  end 
 
 end  
-=======
-	def index
+	
 
-	end	
-end	
->>>>>>> 955cfc217117025d3b926252aca2430a727cad21

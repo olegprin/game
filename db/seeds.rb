@@ -41,9 +41,12 @@ html = open(url)
 
 doc = Nokogiri::HTML(html)
 
+#description
 description=doc.css('#description span')
+#category
+category=doc.css('.moinf2 p a').map { |tag| tag.text.strip }
+#rating 
+rating=doc.css('.moinf2 p span').map { |tag| tag.text.strip }
 
-
-
-  Film.create(title: without_jpg("#{a}").titleize, description: "#{description}".delete("<span>").delete("/"), uploaded_file: File.new("picture/#{a}"), down_file: File.new("swf/#{a}".split(".").delete_if {|i| i == "jpg"}.join("")+'.swf'))
+  Film.create(played: 0, rating: rating.last, title: without_jpg("#{a}").titleize, category: category.join(" "), description: "#{description}".delete("<span>").delete("/"), uploaded_file: File.new("picture/#{a}"), down_file: File.new("swf/#{a}".split(".").delete_if {|i| i == "jpg"}.join("")+'.swf'))
 end

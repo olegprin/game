@@ -11,6 +11,13 @@
             <p>Screenshot</p>
             <div class="img_ramka">
            <%= image_tag(@film.uploaded_file)%>
+           <%if user_signed_in?%>  
+              <%if current_user.admin=="t"%>
+                <%= ui_button 'edit',  t(:edit), edit_film_path(@film)%>
+                <%= ui_button 'delete',  t(:destroy), film_path(@film), method: :delete%>
+              <%end%>
+            <%end%>
+
             </div>
     </div>
     
@@ -48,10 +55,10 @@
         <div class="pregameinfo">
                                    
             <div class="moinf2">
-               <p>Category: <a href="http://www.fungoomy.com/category/dress_up"> Dress Up</a> </p>
-         <p>Played Total: <span>8</span></p>
-               <p>Size: <span>1.9 Mb</span></p>
-               <p>Rating: <span>85%</span></p>
+               <p>Category: <a href="http://www.fungoomy.com/category/dress_up"> <%=@film.category%></a> </p>
+         <p>Played Total: <span><%=@film.played%></span></p>
+               <p>Size: <span><%=@film.uploaded_file_file_size/1000%>Mb</span></p>
+               <p>Rating: <span><%=@film.rating%></span></p>
             </div>                        
             <div class="ratingbar"><div class="ratingbar_full" style="width: 85%;"></div></div>
     </div>
@@ -106,27 +113,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%if user_signed_in?%>  
-  <%if can_manage(current_user.films, @film, Film)%>
-    <%= ui_button 'edit',  t(:edit), edit_film_path(@film)%>
-   <%= ui_button 'delete',  t(:destroy), film_path(@film), method: :delete%>
-  <%end%>
-<%end%>
 
 
 
