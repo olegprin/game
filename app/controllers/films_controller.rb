@@ -30,7 +30,6 @@ class FilmsController < ApplicationController
   # GET /films/new
   def new
     @film = Film.new
-    respond_modal_with @film
   end
   
   def show_modal
@@ -44,11 +43,12 @@ class FilmsController < ApplicationController
   end
   
   def create
-    a=Dir.entries("picture").select {|f| !File.directory? f}
-   a.each do |a|
-    @film = Film.create(title: a)
+    @film=Film.create(film_params)
+    #a=Dir.entries("picture").select {|f| !File.directory? f}
+ #  a.each do |a|
+    #@film = Film.create(title: a)
 
-  end  
+  #end  
     respond_to do |format|
       if @film.save
         format.html { redirect_to @film, notice: 'Film was successfully created.' }
@@ -88,10 +88,14 @@ class FilmsController < ApplicationController
   def play_game 
     @film = Film.find(params[:id])
     @film.update_attributes(played: (@film.played+1))
-    @films=Film.where(category: @film.category).sample(16)
-    @films_left=@films[0..4]
-    @films_right=@films[5..9]
-    @films_down=@films[10..15]
+    if Film.where(category: @film.category).count < 15
+      @films=Film.all.sample(16)
+    else
+      @films=Film.where(category: @film.category).sample(16)
+    end 
+      @films_left=@films[0..4]
+      @films_right=@films[5..9]
+      @films_down=@films[10..15]
   end 
 
   def other

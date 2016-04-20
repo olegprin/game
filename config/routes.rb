@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   
   
+  resources :category_films
   # app/config/routes.rb
   devise_for :users, :controllers => {:registrations => "registrations"}
   resources :categories

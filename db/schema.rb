@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160416082008) do
+ActiveRecord::Schema.define(version: 20160420200845) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "upload_picture_file_name"
@@ -19,8 +19,16 @@ ActiveRecord::Schema.define(version: 20160416082008) do
     t.integer  "upload_picture_file_size"
     t.datetime "upload_picture_updated_at"
     t.string   "category"
+    t.integer  "count_game"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+  end
+
+  create_table "category_films", force: :cascade do |t|
+    t.string   "category_of_game"
+    t.integer  "film_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "comments", force: :cascade do |t|
@@ -42,9 +50,9 @@ ActiveRecord::Schema.define(version: 20160416082008) do
   create_table "films", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.integer  "played"
+    t.integer  "played",                     default: 8
     t.string   "language"
-    t.string   "rating"
+    t.integer  "rating",                     default: 50
     t.string   "uploaded_file_file_name"
     t.string   "uploaded_file_content_type"
     t.integer  "uploaded_file_file_size"
@@ -54,8 +62,8 @@ ActiveRecord::Schema.define(version: 20160416082008) do
     t.integer  "down_file_file_size"
     t.datetime "down_file_updated_at"
     t.string   "category"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
   end
 
   create_table "flashes", force: :cascade do |t|

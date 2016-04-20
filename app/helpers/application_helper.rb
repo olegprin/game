@@ -32,72 +32,10 @@ module ApplicationHelper
   "#{source}?#{asset_id}"
 end
 
-  def current_info
-    Info.find_by_user_id(current_user.id)
-  end
   
-  def show_image
-    @info=Info.find_by_user_id(current_user.id)
-  end  
 
-  def send_message(info)
-    if current_user.id==info.user_id
-      false
-    else
-      true  
-    end
-  end
+
   
-   def order_total_price
-  
-  end 
-
-   def all_total_price
-    @price=0
-    @cart.line_items.each do |line_item|
-      @price=@price+line_item.price.to_i
-      @price
-  end
-  @price
-end 
-
-  def current_info
-    @info = Info.find_by_user_id(current_user.id)
-  end
-def resource_class
-  devise_mapping.to
-end
-  def count_of_product
-      "55"
-  end  
-
-	def current_blog(_user=current_user)
-    @blog=Blog.find_by_user_id(_user.id)
-    @blog
-  end 
-
-  def info_from_email(resourse)
-    @info_for_user=Info.find_by(user_id: resourse.user_id)
-    User.find(resourse.user_id).email.downcase
-  end
-  
-  def info_by_email(resourse)
-    info_from_email(resourse)
-    @info_for_user
-  end
-    
-  def embed(youtube_url)
-    youtube_id = youtube_url.split("=").last
-    content_tag(:iframe, nil, src: "//www.youtube.com/embed/#{youtube_id}")
-  end
-  def role?(roles)
-     current_user.role==roles
-  end  
-
-	def role(sub) 
-	  current_user.role=="moderator" || sub.user_id==current_user.id || current_user.admin
-	end	   	
-
   def full_title(page_title = "Database of films")
     title("#{page_title}")
   end

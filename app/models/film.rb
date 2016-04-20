@@ -6,12 +6,8 @@ class Film < ActiveRecord::Base
   has_one :user
   has_many :voices
   has_one :flash
- 
-  if I18n.locale == :en 
-    CATEGORY = %w[Action Comedy History Other] 
-  else I18n.locale == :ru 
-    CATEGORY=%w[Экшин Комедия Историческое Другое]
-  end    
+  has_many :category_films 
+  CATEGORY = [ "Mario", "Action", "Purchase order" ]   
   
   @model_of_attachment='uploaded_file'.parameterize.underscore.to_sym
 

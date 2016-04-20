@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @films=Film.where(category: @category.category)
+    @films=Film.where(category: @category.category).paginate(:page => params[:page], :per_page => Configurable['films_per_page']).order('created_at DESC')
     render "home/all_film"
   end
 
@@ -71,6 +71,6 @@ class CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def category_params
-      params.require(:category).permit(:upload_picture, :category)
+      params.require(:category).permit(:count_game, :upload_picture, :category)
     end
 end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  film_id: MyString
+  integer: MyString
+
+two:
+  category: MyString
+  film_id: MyString
+  integer: MyString

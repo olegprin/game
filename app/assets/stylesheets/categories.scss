@@ -1,3 +1,60 @@
-// Place all the styles related to the Categories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.alltags {
+  background-color:#ff4488;
+  width:970px;
+  overflow: auto;
+  height:auto;
+  margin:10px auto 10px auto;
+  padding:10px;
+}
+
+ul.tags li {
+  float: left; 
+  list-style: none;
+    padding: 5px 5px 5px 5px;
+    float: left;
+    width:280px;
+    height:60px;
+   font-size: 5px;
+  color:#fff; 
+}
+ul.tags li .tags_left {
+  float: left; 
+    width:60px;
+    height:60px;
+}
+ul.tags li .tags_left img{
+
+  border:0px;
+  padding:5px;
+   width:65px;
+    height:65px;
+}
+
+ul.tags li .tags_right {
+padding-top: 5px;
+font-size: 10px;
+    width:210px;
+height:65px;
+}
+
+div .tags_right_name {
+   margin-left: 2px;
+
+
+
+}
+
+div .tags_right_num { margin-left: 2px;
+
+}
+
+
+div.alltags a {
+  color:#fff; 
+  text-decoration:none;
+}
+div.alltags a:hover {
+  color:#ffd71a;
+  text-decoration:none;
+}

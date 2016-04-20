@@ -6,32 +6,25 @@
 <div align="center">
   <div id="cont_game">
     <h1 id="game_title"><%=@film.title%></h1>
-
-        <div id="gamebigscreen1">
+      
+      <div id="gamebigscreen1">
             <p>Screenshot</p>
-            <div class="img_ramka">
-           <%= image_tag(@film.uploaded_file)%>
-           <%if user_signed_in?%>  
-              <%if current_user.admin=="t"%>
-                <%= ui_button 'edit',  t(:edit), edit_film_path(@film)%>
-                <%= ui_button 'delete',  t(:destroy), film_path(@film), method: :delete%>
-              <%end%>
-            <%end%>
-
-            </div>
-    </div>
+              <div class="img_ramka">
+               <%= image_tag(@film.uploaded_file)%>
+               <%if user_signed_in?%>  
+                  <%if current_user.admin=="t"%>
+                    <%= ui_button 'edit',  t(:edit), edit_film_path(@film)%>
+                    <%= ui_button 'delete',  t(:destroy), film_path(@film), method: :delete%>
+                  <%end%>
+                <%end%>
+              </div>
+      </div>
     
     <div id="b336x280_top_left">
       <p>Advertisement</p>
-      
-<script async="" src="show_game_files/adsbygoogle.js"></script>
-<!-- FunGoomy Top Left -->
-<ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-3865870304158372" data-ad-slot="2628674848"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="280" width="336"></iframe></ins></ins></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    </div> 
 
-    </div>    
+
     <div class="af"></div>
     <br>
         <div class="af"></div>
@@ -58,7 +51,7 @@
                <p>Category: <a href="http://www.fungoomy.com/category/dress_up"> <%=@film.category%></a> </p>
          <p>Played Total: <span><%=@film.played%></span></p>
                <p>Size: <span><%=@film.uploaded_file_file_size/1000%>Mb</span></p>
-               <p>Rating: <span><%=@film.rating%></span></p>
+               <p>Rating: <span><%=@film.played*100/(@film.played+8)%>%</span></p>
             </div>                        
             <div class="ratingbar"><div class="ratingbar_full" style="width: 85%;"></div></div>
     </div>

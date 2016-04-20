@@ -1,0 +1,25 @@
+%h1 Listing category_films
+
+%table
+  %thead
+    %tr
+      %th Category
+      %th Film
+      %th Integer
+      %th
+      %th
+      %th
+
+  %tbody
+    - @category_films.each do |category_film|
+      %tr
+        %td= category_film.category
+        %td= category_film.film_id
+        %td= category_film.integer
+        %td= link_to 'Show', category_film
+        %td= link_to 'Edit', edit_category_film_path(category_film)
+        %td= link_to 'Destroy', category_film, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Category film', new_category_film_path

@@ -6,7 +6,7 @@
 films_per_page:
   name: Site Title
   type: integer
-  default: 28
+  default: 24
 
 postings_per_page:
   name: Site Title

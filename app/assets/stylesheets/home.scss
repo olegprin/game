@@ -237,7 +237,7 @@ margin: 6px -82px 0px 0px;
     opacity: 0.7;
   border-radius: 0 0 20px 20px;
 }
-.game_preview_big .game_preview_title, .game_preview_big2 .game_preview_title {
+game_preview_title {
   color: #fff;
   text-align: center;
   font-size: 12px;
@@ -269,7 +269,7 @@ margin: 6px -82px 0px 0px;
 }
 
 
-.new, .top, .hot, .feature{
+.top, .hot, .feature{
    position: absolute;
    width: 60px;
    height: 35px;
@@ -277,10 +277,10 @@ margin: 6px -82px 0px 0px;
    margin: 4px 0px 0px 76px;
 }
 .new{
-       background: url('images/new.png') no-repeat;
+       background: url('/assets/new.png') no-repeat;
 }
 .top{
-       background: url('images/top.png') no-repeat;
+       background: url('/assets/top.png') no-repeat;
 }
 .hot{
     background: url('images/hot.png') no-repeat;
@@ -403,13 +403,16 @@ margin: 6px -82px 0px 0px;
 
 
 
-#logo {
-    display: inline-block;
-    margin-right: 10px;
+
+
+
+
+
+#logo_head {
+    padding-left: 40px;
+    margin-left: 40px;
+
 }
-/*#logo img{
-    margin-top: 37px;
-}*/
 
 #search_res{
     color: #fff;
@@ -545,7 +548,7 @@ margin-left: 10px;
   text-align: center;
   color: #666;
   font-size: 12px;
-  float: left;
+  float: right;
 }
 
 #gamebigscreen1, #gamebigscreen2{
@@ -554,8 +557,9 @@ margin-left: 10px;
   font-size: 14px;
 }
 #gamebigscreen1 {
-    margin: 20px 60px 0 0 ;
-    float: right; 
+padding-left: 60px;
+    margin: 20px 30px 0 0 ;
+    float: left; 
   color: #666;
   font-size: 12px;
 }
@@ -673,7 +677,13 @@ font-size: 1px;
 #description p{
     
     color: #533E6A;
-    font-size: 20px;
+    font-size: 17px;
+    margin: 0 0  5px 0;
+}
+#description span{
+    
+    color: #533E6A;
+    font-size: 17px;
     margin: 0 0  5px 0;
 }
 #screen_dimension{
@@ -736,6 +746,8 @@ background: url('images/bow_on.png') no-repeat;
 .ratp {
 position: relative; top: -23px; left: 160px;
 }
+
+
 
 
 
@@ -930,4 +942,17 @@ border-color:#9F4578;
 #li_{
   width:31px;
 }
+
+
+
+
+.new, .top, .hot, .feature{
+   position: absolute;
+   width: 60px;
+   height: 35px;
+   z-index: 2;
+   margin: 4px 0px 0px 106px;
+}
+
+div .image_game {padding: 10px;} 
 

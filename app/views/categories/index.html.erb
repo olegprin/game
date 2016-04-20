@@ -1,33 +1,24 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <div id="page">
 
-        <div align="center">
-          <div id="cont_game">
-                
-                <div class="af"></div>
-                
-     
-            <%@categories.each do |category|%>
-                <span class="category">
-                   <%=link_to image_tag(category.upload_picture), category_path(category), class: "category"%>
-                    <p><%="#{category.category.partition(" ").join("")}"+" "%>Games</p>            
-                </span>
-                
-            <%end%>
-        
-                <div class="af"></div>
-                <br><br>
-                <div class="af"></div>
-                <a id="red_button" href="http://www.fungoomy.com/"></a>
-                <div class="af"></div>
+
+<div class="alltags">
+    <ul class="tags">
+               
+        <%@categories.each do |category|%>
+          <%count_of_game=CategoryFilm.where(category_of_game: category.category).count%>   
+                <li>
+            <div class="tags_left"> <%=link_to image_tag(category.upload_picture), category_path(category)%></div>
+            <div class="tags_right">
+                <div class="tags_right_name"><%="#{category.category.partition(" ").join("")}"%>
+                </div>
+                <div class="tags_right_num"><%=count_of_game%></div>
             </div>
-        </div>
-    
-    </div> <!--page-->
-
-
+        </li>
+          <%end%>
+    </ul>
+</div>
 
 
 

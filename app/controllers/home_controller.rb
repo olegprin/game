@@ -7,8 +7,13 @@ respond_to :html, :js, :json
  end 
 
  def all_film
-    @films=Film.all.paginate(:page => params[:page], :per_page => Configurable['films_per_page']).order('created_at DESC')
-    respond_to do |format|
+   
+    @film_s=Film.all
+    count=@film_s.count
+        @films=@film_s[count-12..-1]
+        @films_else=@film_s[0..count-11].paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
+    @film_pag=Film.all.paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
+   respond_to do |format|
         format.html { }
         format.json {  }
         format.js { }

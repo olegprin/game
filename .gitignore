@@ -10,7 +10,9 @@
 /swf
 /picture
 /public
-
+/deploy
+/deploy_try
+/picture_zeze
 
 # Ignore all logfiles and tempfiles.
 /log/*

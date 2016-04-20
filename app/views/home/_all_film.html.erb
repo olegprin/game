@@ -1,9 +1,42 @@
+<div class="row">
 <%@films.each do |film|%>
-        <a class="game_preview">     
-          <%= link_to image_tag(film.uploaded_file), film_path(film), class: "game_preview"%> 
-        <div class="new">
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+ 
+});
+
+</script>
+
+  <% unless params[:page]%>
+    <div class="image_game_one">
+              <div class="col-md-2">
+              <div class="image_game">    
+               <div class="new"></div>     
+              <%= link_to image_tag(film.uploaded_file, width: 160), film_path(film)%>
+            </div>
+            
+             </div>
+            
+               </div>
+
+          <%end%>
+  <%end%>
+  <%@films_else.each do |film_el|%>
+
+<div class="image_game_one">
+          <div class="col-md-2">
+          <div class="image_game">    
+          
+          <%= link_to image_tag(film_el.uploaded_file, width: 160), film_path(film_el)%>
         </div>
-          <div class="game_preview_title"><%=film.title%>
-          </div>
-        </a>
-      <%end%>   
+        
+         </div>
+        
+           </div>
+
+      <%end%>      
+ </div>
+
+       

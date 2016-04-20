@@ -10,10 +10,15 @@
 
   
     <%= f.text_field :title,  label: "#{t('forms.buttons.title')}", placeholder: "title",:size => 160  %>
-  
+    
+     <%= f.text_field :description,  label: "Description", placeholder: "description",:size => 160  %>
+
+
       <%= f.file_field :uploaded_file, label: "#{t('forms.buttons.picture')}", placeholder: "picture" %>
 
-     <%= f.file_field :down_file, label: "#{t('forms.buttons.torent')}", placeholder: "torent" %>
+     <%= f.file_field :down_file, label: "Game", placeholder: "torent" %>
+      
+      <%= f.select :category, Film::CATEGORY, prompt: 'Select a category',:size => 60 %>
 
                   
             <%= f.button t('forms.buttons.submit'), data: {disable_with: "<i class='fa fa-refresh fa-spin'></i> Creating..."}  %>

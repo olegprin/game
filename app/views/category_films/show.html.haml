@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Category:
+  = @category_film.category
+%p
+  %b Film:
+  = @category_film.film_id
+%p
+  %b Integer:
+  = @category_film.integer
+
+= link_to 'Edit', edit_category_film_path(@category_film)
+\|
+= link_to 'Back', category_films_path
