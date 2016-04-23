@@ -13,22 +13,6 @@ class ApplicationController < ActionController::Base
 
 
 
-
-
- 
-
-  rescue_from Cinema::NotFound do
-    render_404
-  end
-
-  rescue_from Cinema::InvalidAccess do
-    render_404
-  end
-
-  rescue_from Cinema::ReadOnly do
-    render_404
-  end
-
   def user_present?
     current_user.present?
   end

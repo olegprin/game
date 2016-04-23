@@ -12,10 +12,10 @@ class FilmsController < ApplicationController
   respond_to :html, :js, :json
   # GET /films
   # GET /films.json
- def index
-  @films = Film.all.paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
+  def index
+    @films = Film.all.paginate(:page => params[:page], :per_page => Configurable['films_per_page'])
     render "all_film"
- end 
+  end 
   # GET /films/1
   # GET /films/1.json
   def show

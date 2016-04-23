@@ -10,8 +10,13 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @films=Film.where(category: @category.category).paginate(:page => params[:page], :per_page => Configurable['films_per_page']).order('created_at DESC')
-    render "home/all_film"
+    @category=@category.category #adventure
+    @films_category=CategoryFilm.where(category_of_game: @category)
+    @films=[]
+    @films_category.each do |category|
+      @films<<Film.where(id: category.film_id)#.paginate(:page => params[:page], :per_page => Configurable['films_per_page']).order('created_at DESC')
+    end
+    @films
   end
 
   # GET /categories/new

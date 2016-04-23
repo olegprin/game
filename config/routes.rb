@@ -6,18 +6,12 @@ Rails.application.routes.draw do
   # app/config/routes.rb
   devise_for :users, :controllers => {:registrations => "registrations"}
   resources :categories
-  resources :flashes
-  resources :pictures
+
   get 'picture/picture'
 
   get 'picture/game'
 
-  resources :comments
 
-  resources :searches
-  resources :infos
-  put "voices/:increase_id" => "voices#increase", :as => "voices_increase"
-  put "voices/:decrease_id" => "voices#decrease", :as => "voices_decrease"
 
   namespace :admin do
     resources  :admins
@@ -37,18 +31,13 @@ Rails.application.routes.draw do
 
 
   
-  get 'home/index'
+  #get 'home/index'
+  #get 'store/index'
+  #get 'store/all_category'
+  # get 'store/show'
+  #get 'store/contact'
 
-  get 'store/index'
-  get 'store/all_category'
-  get 'store/show'
-  get 'store/contact'
-  get 'line/increase',to: 'line_items#increase', as: :increase_line_item
-  get 'line/decrease',to: 'line_items#decrease', as: :decrease_line_item
-  get 'store/showlike'
-  get '/change_locale/:locale', to: 'pages#change_locale', as: :change_locale
   
-
 
 
   

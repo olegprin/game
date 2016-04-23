@@ -1,0 +1,80 @@
+
+
+
+
+<%if current_user.present?%>
+<%= link_to "logout", destroy_user_session_path, :method => :delete%>
+<%end%>
+    <div id="content">
+      
+
+
+
+
+
+<div class="row">
+          <%@films.each do |film|%>
+ <%film.each do |film|%>
+
+
+
+
+    <div class="image_game_one">
+              <div class="col-md-2">
+              <div class="image_game">    
+     
+              <%= link_to image_tag(film.uploaded_file, width: 160), film_path(film)%>
+            </div>
+            
+             </div>
+            
+               </div>
+
+        
+  <%end%>
+
+
+      <%end%>  
+    
+ </div>
+
+       
+
+
+
+
+
+
+
+
+
+
+      
+  
+    </div>
+
+
+
+
+
+<div class="af"></div>
+<div id="bottom"></div>
+<p id="main_text">  
+  <br><br>  
+</p>
+
+
+  </div> <!--page-->
+
+
+
+
+
+</body></html>
+
+
+
+          
+
+
+   

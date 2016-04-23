@@ -27,15 +27,26 @@ module ApplicationHelper
   end
   
   def custom_assets(source, ext)
-  path = File.join(Rails.root, 'assets', source) + ext
-  asset_id = File.exist?(path) ? File.mtime(path).to_i.to_s : ''
-  "#{source}?#{asset_id}"
-end
+    path = File.join(Rails.root, 'assets', source) + ext
+    asset_id = File.exist?(path) ? File.mtime(path).to_i.to_s : ''
+    "#{source}?#{asset_id}"
+  end
 
   
-
-
+  def insert_category(film)
+    all_category=[]
+    film.category_films.map {|category| all_category<<category.category_of_game}
+    @all_category=all_category
+  end
   
+  def all_link(film)
+    insert_category(film)
+    @current_category=[] 
+    @all_category.each do |category|
+      @current_category<<Category.where(category: category)
+    end
+  end
+
   def full_title(page_title = "Database of films")
     title("#{page_title}")
   end

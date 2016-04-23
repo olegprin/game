@@ -40,15 +40,20 @@
 <script async="" src="show_game_files/adsbygoogle.js"></script>
 <!-- Fungoomy.Com 728x90 (2 page) -->
 <ins data-adsbygoogle-status="done" class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-3865870304158372" data-ad-slot="6919273646"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" frameborder="0" height="90" width="728"></iframe></ins></ins></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 
 </div><br>
         <div class="pregameinfo">
                                    
             <div class="moinf2">
-               <p>Category: <a href="http://www.fungoomy.com/category/dress_up"> <%=@film.category%></a> </p>
+              <% all_link(@film)%>
+              <p>Category:<%@current_category.each do |k|%> </p>
+                  <%k.each do |y|%>
+                 <%=link_to "#{y.category}", category_path(y.id)%>
+                     <%end%>
+                <%end%>
+
+
          <p>Played Total: <span><%=@film.played%></span></p>
                <p>Size: <span><%=@film.uploaded_file_file_size/1000%>Mb</span></p>
                <p>Rating: <span><%=@film.played*100/(@film.played+8)%>%</span></p>
